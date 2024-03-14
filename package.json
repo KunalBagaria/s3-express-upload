@@ -1,7 +1,7 @@
 {
-  "name": "express-api-starter-ts",
+  "name": "shared-cloud-storage",
   "version": "1.2.0",
-  "description": " A basic starter for an express.js API with Typescript",
+  "description": " A server for abstracting AWS S3 Storage and allowing authenticated requests",
   "main": "src/index.ts",
   "scripts": {
     "start": "ts-node src/index.ts",
@@ -12,10 +12,10 @@
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
-  "author": "CJ R. <cj@null.computer> (https://w3cj.now.sh)",
+  "author": "Kunal Bagaria <hi@kunalbagaria.com> (https://kunalbagaria.com)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/w3cj/express-api-starter.git"
+    "url": "https://github.com/kunalbagaria/shared-cloud-storage.git"
   },
   "license": "MIT",
   "dependencies": {
