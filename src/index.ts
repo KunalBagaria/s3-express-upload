@@ -1,9 +1,10 @@
 import app from './lib/app';
+import { config } from './lib/config';
+import { validateAllEnvVars } from './lib/config';
 
-const port = process.env.PORT || 8080;
-
-app.listen(port, () => {
+app.listen(config.port, () => {
+  validateAllEnvVars();
   /* eslint-disable no-console */
-  console.log(`Listening: http://localhost:${port}`);
+  console.log(`Listening: http://localhost:${config.port}`);
   /* eslint-enable no-console */
 });

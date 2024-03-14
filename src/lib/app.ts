@@ -1,13 +1,10 @@
+import api from '../api';
 import express from 'express';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
-
+import path from 'path';
 import * as middlewares from './middlewares';
-import api from '../api';
-import MessageResponse from '../interfaces/MessageResponse';
-
-require('dotenv').config();
 
 const app = express();
 
@@ -16,10 +13,8 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-app.get<{}, MessageResponse>('/', (req, res) => {
-  res.json({
-    message: "Welcome, Human/Robot! We don't discriminate even if you are a unicorn 🦄🌈✨👋🌎🌍🌏✨🌈🦄",
-  });
+app.get<{}>('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 app.use('/api/v1', api);
