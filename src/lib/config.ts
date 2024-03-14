@@ -13,13 +13,17 @@ export function validateAllEnvVars() {
     'AWS_REGION',
     'AWS_BUCKET',
     'AWS_ACCESS_KEY_ID',
-    'AWS_SECRET_ACCESS_KEY'
+    'AWS_SECRET_ACCESS_KEY',
+    'PASSWORD',
+    'SERVER_URL',
   ];
   requiredEnvVars.forEach(validateEnvVar);
 }
 
 export const config = {
   port: process.env.PORT || 8080,
+  password: process.env.PASSWORD!,
+  serverUrl: process.env.SERVER_URL!,
   aws: {
     region: process.env.AWS_REGION!,
     bucket: process.env.AWS_BUCKET!,
