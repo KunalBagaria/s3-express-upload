@@ -2,6 +2,7 @@ import express from 'express';
 
 import MessageResponse from '../interfaces/MessageResponse';
 import uploadFile from './upload';
+import { authenticate } from '../lib/auth';
 
 const router = express.Router();
 
@@ -13,6 +14,7 @@ router.get<{}, MessageResponse>('/', (req, res) => {
 
 });
 
+router.use(authenticate);
 router.use('/upload-file', uploadFile);
 
 export default router;
