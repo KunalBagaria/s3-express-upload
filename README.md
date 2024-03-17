@@ -17,15 +17,17 @@ cd shared-cloud-storage
 bun install
 ```
 
-3. Configure the required environment variables:
+3. Edit `.env.sample` file to `.env` and fill in the required environment variables:
 
 ```bash
 # S3 Bucket and Region
 AWS_REGION="your-region"
 AWS_BUCKET="your-bucket-name"
-CLOUDFRONT_DOMAIN="your-cloudfront-domain"
 AWS_ACCESS_KEY_ID="your-access-key-id"
 AWS_SECRET_ACCESS_KEY="your-secret-access-key"
+
+# Cloudfront
+CLOUDFRONT_DOMAIN="your-cloudfront-domain"
 
 # Authentication
 PASSWORD=your-secure-password
