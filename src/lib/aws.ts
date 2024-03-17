@@ -5,8 +5,8 @@ const s3 = new S3Client({
   region: config.aws.region,
   credentials: {
     accessKeyId: config.aws.accessKeyId,
-    secretAccessKey: config.aws.secretAccessKey
-  }
+    secretAccessKey: config.aws.secretAccessKey,
+  },
 });
 
 export { s3 };

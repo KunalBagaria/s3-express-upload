@@ -32,4 +32,4 @@ export const config = {
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
     cloudFrontDomain: process.env.CLOUDFRONT_DOMAIN!,
   },
-}
+};

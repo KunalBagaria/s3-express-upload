@@ -7,7 +7,7 @@ app.listen(config.port, () => {
   validateAllEnvVars();
   generateQRCode();
   /* eslint-disable no-console */
-  console.log(`Scan the QR code on your app to connect to the server.`);
+  console.log('Scan the QR code on your app to connect to the server.');
   console.log(`Listening: http://localhost:${config.port}`);
   /* eslint-enable no-console */
 });

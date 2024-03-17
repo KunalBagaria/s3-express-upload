@@ -25,7 +25,7 @@ const upload = multer({ storage: storage });
 
 router.post('/', upload.array('files'), (req: Request, res: Response) => {
   res.json({
-    message: `Files Uploaded Successfully! - 🥷🥳🔥`,
+    message: 'Files Uploaded Successfully! - 🥷🥳🔥',
     success: true,
   });
 });

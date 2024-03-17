@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.get<{}, MessageResponse>('/', (req, res) => {
   res.json({
-    message: "Shared Cloud Storage - 👋🌎🌍🌏",
+    message: 'Shared Cloud Storage - 👋🌎🌍🌏',
   });
 });
 

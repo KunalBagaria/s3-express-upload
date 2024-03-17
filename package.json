@@ -4,9 +4,9 @@
   "description": " A server for abstracting AWS S3 Storage and allowing authenticated requests",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
     "build": "tsc",
+    "start": "node dist/src/index.js",
     "lint": "eslint --fix src test",
     "test": "jest",
     "typecheck": "tsc --noEmit"
