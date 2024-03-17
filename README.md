@@ -1,8 +1,6 @@
 # Shared Cloud Storage
 
-## Getting Started
-
-### Installation
+## Installation
 
 1. Clone the repository:
 
