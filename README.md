@@ -2,6 +2,8 @@
 
 A simple password gated Express API to manage an AWS S3 bucket.
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/UG5u7k?referralCode=kunal)
+
 ## Installation
 
 1. Clone the repository:
