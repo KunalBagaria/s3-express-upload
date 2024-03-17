@@ -14,6 +14,7 @@ export function validateAllEnvVars() {
     'AWS_BUCKET',
     'AWS_ACCESS_KEY_ID',
     'AWS_SECRET_ACCESS_KEY',
+    'CLOUDFRONT_DOMAIN',
     'PASSWORD',
     'SERVER_URL',
   ];
@@ -28,6 +29,7 @@ export const config = {
     region: process.env.AWS_REGION!,
     bucket: process.env.AWS_BUCKET!,
     accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
+    cloudFrontDomain: process.env.CLOUDFRONT_DOMAIN!,
   },
 }
