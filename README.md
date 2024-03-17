@@ -54,7 +54,7 @@ All routes except the root (`/`) require authentication. Include the `Authorizat
 
 - `GET /`: Returns a welcome message.
 - `GET /api/v1/files/:startDate?/:endDate?`: Retrieve a list of all files in your storage.
-- `POST /api/v1/upload-file`: Upload a new file to your storage. Include the file data in the request body as `multipart/form-data`.
+- `POST /api/v1/upload-file`: Upload files to your S3 Bucket.
 
 ## Contributing
 
