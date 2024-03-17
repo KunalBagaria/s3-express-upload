@@ -1,5 +1,7 @@
 # Shared Cloud Storage
 
+A simple password gated API to manage a AWS storage bucket.
+
 ## Installation
 
 1. Clone the repository:
