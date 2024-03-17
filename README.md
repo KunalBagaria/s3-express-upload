@@ -1,19 +1,19 @@
-# Shared Cloud Storage
+# S3-Express-Upload
 
-A simple password gated API to manage a AWS storage bucket.
+A simple password gated Express API to manage an AWS S3 bucket.
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/kunalbagaria/shared-cloud-storage.git
+git clone https://github.com/kunalbagaria/s3-express-upload.git
 ```
 
 2. Install dependencies:
 
 ```bash
-cd shared-cloud-storage
+cd s3-express-upload
 bun install
 ```
 
