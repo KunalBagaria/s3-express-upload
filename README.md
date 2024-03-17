@@ -30,7 +30,7 @@ AWS_SECRET_ACCESS_KEY="your-secret-access-key"
 CLOUDFRONT_DOMAIN="your-cloudfront-domain"
 
 # Authentication
-PASSWORD=your-secure-password
+PASSWORD="your-secure-password"
 
 # Miscellaneous
 SERVER_URL="http://localhost:8080/"
