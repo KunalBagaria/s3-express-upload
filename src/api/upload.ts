@@ -24,10 +24,20 @@ const storage = multerS3({
 const upload = multer({ storage: storage });
 
 router.post('/', upload.array('files'), (req: Request, res: Response) => {
+  if (!req.files || (req.files as Express.Multer.File[]).length === 0) {
+    // No files were uploaded
+    return res.status(400).json({
+      message: 'No files uploaded.',
+      success: false,
+    });
+  }
+
+  // Successfully uploaded files
   res.json({
-    message: 'Files Uploaded Successfully! - 🥷🥳🔥',
+    message: `${(req.files as Express.Multer.File[]).length} Files Uploaded Successfully! - 🥷🥳🔥`,
     success: true,
   });
 });
 
-export default router;
+export default router;  
+
